@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <center>
+  <body>
+    <h1>Fetching the data from data base(Student)</h1><br>
+    <h1>Model form example</h1><hr>
+    {% for i in stud%}
+    <h2>{{i.name}}</h2>
+    <h2>{{i.roll}}</h2>
+    <h2>{{i.percent}}</h2>
+    <h2>{{i.dob}}</h2>
+    <h2>{{i.email}}</h2><hr>
+    {%endfor%}
+
+  </body>
+</html>
