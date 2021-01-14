@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <style media="screen">
+     input[type=submit]{
+background-color: #4CAF50;
+border: none;
+color: white;
+padding: 16px 32px;
+text-decoration: none;
+margin: 4px 2px;
+cursor: pointer;
+}
+input[type=text],input[type = number] {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color: #3CBC8D;
+  color: white;
+}
+h1{
+  background-color: red;
+  width:30%;
+}
+form {
+  background-color: #B5FF33;
+  width:30%;
+}
+
+    </style>
+  </head>
+  <center>
+  <body>
+    {% block for_child %}
+    <h1>Update Employee details</h1>
+    <form method="POST">
+      <h2>employee number: <input type="number" name="eno" value="{{emp.eno}}"><br><br>
+      employee name: <input type="text" name="ename" value="{{emp.ename}}"><br><br>
+      employee salary: <input type="number" name="esal" value="{{emp.esal}}"><br><br>
+      employee details: <input type="text" name="eaddr" value="{{emp.eaddr}}"><br><br>
+      {% csrf_token %}
+      <input class="btn btn-primary" type="submit" value="Submit"></h2>
+
+    </form>
+    {% endblock %}
+  </body>
+</html>
