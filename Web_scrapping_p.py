@@ -63,4 +63,4 @@ data = { 'bank_name':bank_name ,'Review':review_trustscore, 'service_type':servi
 #print()
 df = pd.DataFrame(data, columns = ['bank_name','Review','service_type','Address'])
 #print(df)
-//df.to_csv(r'F:\Pentagon\practice\web scrapping/Bank_information.csv')
+#df.to_csv(r'F:\Pentagon\practice\web scrapping/Bank_information.csv')
