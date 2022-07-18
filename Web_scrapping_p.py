@@ -43,7 +43,7 @@ def scraping(webpage):
         address.append(Address.text)
     
     #Generating the next page url
-    '''if page_number < 18:
+    '''if page_number < 16:
         
         page_number = page_number + 1
         scraping(webpage, page_number)'''
